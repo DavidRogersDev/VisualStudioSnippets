@@ -9,16 +9,16 @@
       <Code Language="JavaScript"><![CDATA[
         $$.ajax({
             type: 'POST',
-            contentType: constants.FormPostContentType,
+            contentType: 'application/x-www-form-urlencoded',
             cache: false,
             url: url,
-            dataType: constants.JsonDataType,
+            dataType: 'json',
             data: data,
             beforeSend: function () {
                 
             }
         }).done(function (data, textStatus, jqXHR) {
-            if (data.Result === 'Success') {                
+            if (data.result === 'success') {                
 
             } else {
                 
