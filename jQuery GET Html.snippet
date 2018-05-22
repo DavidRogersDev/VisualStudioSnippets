@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Author>David Rogers</Author>
+      <Description>Jquery AJAX GET Html configuration.</Description>
+      <Shortcut>jgh</Shortcut>
+      <Title>jQuery Ajax Get</Title>
+    </Header>
+    <Snippet>
+      <Code Language="JavaScript"><![CDATA[        
+	  $$.ajax({
+            type: 'GET',
+            cache: true,
+            url: url,
+            dataType: 'html',
+            data: null,
+            beforeSend: function () {
+                // this is where we append a loading image
+            }
+        }).done(function (data, textStatus, jqXHR) {
+
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            
+        }).always(function(/* arguments vary if fail or not */) {
+            
+        });]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
